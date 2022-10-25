@@ -1,0 +1,200 @@
+@import url("main.css");
+
+.hero_discographie {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+@media (orientation:landscape) {
+    .hero_discographie {
+        height: 56.25vw;
+    }
+}
+
+.esp_button {
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.degrade_contraste {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.container, .row {
+    width: 100%;
+    height: 100%;
+}
+
+.band {
+    position: absolute;
+    z-index: 1;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    bottom: 0;
+}
+
+.title-1 {
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.description {
+    color: var(--yellow);
+    font-family: var(--fira);
+    max-width: 90%;
+}
+
+.btn-primary {
+    color: var(--dark-grey);
+    background-color: var(--orange);
+    font-family: var(--fira);
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border-radius: 15px;
+}
+
+.btn-primary:hover {
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+}
+
+.navbar {
+    background-color: black;
+    width: 100vw;
+    padding: 10px 20px;
+    font-family: var(--sedgwick);
+}
+
+.nav-item {
+    padding-top: 8px;
+}
+
+.logo {
+    height: 45px;
+}
+
+footer {
+    background-color: var(--turquoise);
+    padding: 35px;
+    margin-top: 20px;
+    font-family: var(--fira);
+    font-weight: bold;
+    bottom: 0;
+    width: 100vw;
+}
+
+.lienGit {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.lienGit:hover {
+    color: var(--yellow);
+}
+
+aside {
+    position: relative;
+}
+
+.animation {
+    width: 100%;
+}
+
+.album {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.iridescent, .wteb, .ews, .tngs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.album-tracks {
+    font-family: var(--fira);
+    margin-top: 20px;
+}
+
+.esp_album {
+    padding: 10px 15px;
+}
+
+.titreVideo {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.aspectRatioIframe {
+    aspect-ratio: 16 / 9;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.membresCredits { transition: all .2s ease-in-out; }
+.membresCredits:hover { transform: scale(1.1); }
+
+.modal-title {
+    font-size: 40px;
+}
+
+.imgModal {
+    width: 300px;
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgSwiper {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-turquoise);
+}
+
+.spritesheet-container {
+    width: 100%;
+}
+
+.spritesheet, .scroll-up, .scroll-down {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 45%;
+    left: -2%;
+    animation-name: animSpritesheet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+}
+
+.spritesheet {
+    background-image: url(../img/idle-ews.png);
+}
+
+.scroll-up {
+    background-image: url(../img/scroll-up-ews.png);
+}
+  
+.scroll-down {
+    background-image: url(../img/scroll-down-ews.png);
+}
+
+@keyframes animSpritesheet {
+    from { background-position: 0 0; }
+    to { background-position: 0 -20160px; }
+}
